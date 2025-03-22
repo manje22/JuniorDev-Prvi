@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.moodIconHappy{
+  background-color: yellow;
+  padding: 25%;
+}
+
+.moodIconNeutral{
+  background-color: blue;
+  padding: 25%;
+}
+.moodIconSad{
+  background-color: gray;
+  padding: 25%;
+}
