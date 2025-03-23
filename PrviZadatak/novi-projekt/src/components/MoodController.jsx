@@ -15,10 +15,15 @@ function MoodController({trenutnoRaspolozenje ,promjeniRasp}) {
             <div>
                 <p>Broj azuriranja: {brojac}</p>
             </div>
-            <button onClick={() => Azuriraj("sretno")}>Sretno</button>
-            <button onClick={() => Azuriraj("neutralno")}>Neutralno</button>
-            <button onClick={() => Azuriraj("tuzno")}>Tužno</button>
-            {brojac >=  10 && <button onClick={() => postaviBrojac(0)}>Resetiraj brojac</button>}
+            <div className='controllerButtonContainer'>
+                <button onClick={() => Azuriraj("sretno")}>Sretno</button>
+                <button onClick={() => Azuriraj("neutralno")}>Neutralno</button>
+                <button onClick={() => Azuriraj("tuzno")}>Tužno</button>
+            </div>
+            <div className='resetButtonContainer'>
+                {brojac >=  10 && <button onClick={() => postaviBrojac(0)}>Resetiraj brojac</button>}
+            </div>
+            
         </div>
   )
 }

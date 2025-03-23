@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 60%;
+  height: 100%;
 }
 
 .logo {
@@ -41,16 +42,43 @@
   color: #888;
 }
 
+.moodIcon{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.moodIconImg{
+  padding: 2.5em;
+}
+
 .moodIconHappy{
   background-color: yellow;
-  padding: 25%;
 }
 
 .moodIconNeutral{
-  background-color: blue;
-  padding: 25%;
+  background-color: skyblue;
 }
+
 .moodIconSad{
   background-color: gray;
-  padding: 25%;
+}
+
+
+.controllerButtonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.controllerButtonContainer button{
+  margin: 10px;
+}
+
+.resetButtonContainer{
+  padding: 1em;
+}
+
+.resetButtonContainer button{
+  background-color: lightcoral;
 }
